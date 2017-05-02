@@ -23,8 +23,8 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
 
 ### スタイルシートの適用
 
-1. ダウンロード
-1. config.jsonが存在する場所に、user.cssを移動する<br>config.jsonがあるのは多分以下のあたり
+1. [「Downloads」](https://github.com/D9XSkeFUtRqs/ukigumo/releases)からダウンロードし、展開
+1. config.jsonが存在する場所に、ダウンロードしたuser.cssを移動する<br>config.jsonがあるのは多分以下のあたり
     + Windows：`%APPDATA%\Mstdn`
     + macOS：`~/Library/Application\ Support/Mstdn`
     + Linux：`~/.config/Mstdn`
