@@ -1,6 +1,6 @@
 # Ukigumo
 
-[Mastodon](https://github.com/tootsuite/mastodon)のデスクトップクライアント「[Mstdn.app](https://github.com/rhysd/Mstdn)」を某所風にするスタイルシート
+[Mastodon](https://github.com/tootsuite/mastodon)のデスクトップクライアント「[Mstdn](https://github.com/rhysd/Mstdn)」を某所風にするスタイルシート
 
 ## 導入
 
@@ -10,7 +10,8 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
 
 ### Mstdn.appのインストール
 
-1. [ここの「Downloads」](https://github.com/rhysd/Mstdn/releases)から各OS用のファイルをダウンロード（Windowsだったら多分「Mstdn-win32-x64-x.x.x.zip」）
+1. [Mstdnの「Downloads」](https://github.com/rhysd/Mstdn/releases)から各OS用のファイルをダウンロード（Windowsだったら多分「Mstdn-win32-x64-x.x.x.zip」）
+    + 私の環境（Windows）では何故かv0.2.4が起動しない…<br>もし同様であればv0.2.3を試してみてください
 1. 適当なところに展開
 1. Mstdn.exeを起動すると「Please write configulation in JSON」と出て、config.jsonが開く
 1. config.jsonを以下のように書き換えて、保存する
