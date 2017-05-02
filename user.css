@@ -12,7 +12,7 @@
 
 .ui,
 .drawer__inner,
-.scrollable:not(.optionally-scrollable) {
+.column .scrollable:not(.optionally-scrollable) {
   background-color: #FFFFEE !important;
 }
 
@@ -27,10 +27,24 @@
   border-bottom: #FFFFEE 10px solid !important;
 }
 
+.emoji-button img{
+  visibility: hidden;
+}
+.emoji-button{
+  background-image: url(/emoji/1f60f.svg);
+  background-size: cover !important;
+  background-position: center !important;
+  transform: rotate(335deg);
+}
+
 .status.muted,
 [style="cursor: default;"] > .status,
 .detailed-status__action-bar {
   border-style: none !important;
+}
+
+.notification > .account{
+  border-style: none;
 }
 
 .status__prepend span,
@@ -59,14 +73,19 @@
   color: #55F;
 }
 
+.status__content__spoiler-link {
+  background-color: #FF7733 !important;
+  color: #FFF !important;
+}
+
 /* ヘッダー*/
 .column-header,
 .column-back-button,
 .column-icon,
-.drawer__header,
+.drawer__header .drawer__tab,
 .tabs-bar__link{
   background-color: #F51 !important;
-  color: #FFF;
+  color: #FFF !important;
 }
 .drawer__header a:hover,
 .column-icon:hover,
@@ -77,14 +96,13 @@
   background-color: #EEAA88 !important;
 }
 
-}
 .column-header i,
 .column-back-button i,
 .column-back-button span,
 .column-icon i,
 .drawer__header a i,
 .tabs-bar a i,
-.account__action-bar a.dropdown__trigger i,
+.account__action-bar .dropdown__trigger.icon-button i,
 .drawer__header .drawer__tab a {
   color: #FFFFFF !important;
 }
@@ -110,7 +128,7 @@
   background: #FFFFEE;
 }
 .scrollable::-webkit-scrollbar-thumb{
-  background-color: #EEAA88;
+  background-color: #EEAA88 !important;
 }
 .scrollable::-webkit-scrollbar-thumb:hover{
   background-color: #FB9;
@@ -146,10 +164,6 @@ button.button::before{
   border: 1px grey solid;
   color: #822 !important;
 }
-{
-  background-color: #FFFFFF;
-  border: 1px grey solid;
-}
 .search-results__hashtag {
   color: #822 !important;
 }
@@ -167,6 +181,16 @@ button.button::before{
   color: #822 !important;
 }
 
+.drawer__inner .autosuggest-textarea {
+  border-color: grey !important;
+  border-style: solid solid hidden !important;
+  border-width: 1px;
+}
+.compose-form__modifiers {
+  border-color: grey !important;
+  border-style: hidden solid solid !important;
+  border-width: 1px;
+}
 
 /* マケドニア */
 .optionally-scrollable {
