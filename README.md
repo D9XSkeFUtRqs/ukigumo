@@ -1,4 +1,4 @@
-# Ukigumo
+# ukigumo
 
 [Mastodon](https://github.com/tootsuite/mastodon)のデスクトップクライアント「[Mstdn](https://github.com/rhysd/Mstdn)」を某所風にするスタイルシート
 
