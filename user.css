@@ -124,15 +124,15 @@ button.button::before{
 
 /* カラム部分 */
 
-.scrollable:not(.optionally-scrollable) > *,
-.search-results__section > .account {
+.scrollable:not(.optionally-scrollable) > * {
     background-color: #EDC !important;
 }
 
 .scrollable > * > .status,
 [style="cursor: default;"],
 .notification,
-.search-results__section > .account {
+.account {
+    background-color: #EDC !important;
     border-bottom: #FFE 10px solid !important;
 }
 
