@@ -2,6 +2,7 @@
 /* 計算したくないので!importantがむちゃくちゃ多いです。 */
 
 /* 全体 */
+
 @media screen and (min-width: 1290px){
     .column {
         width: 25.58% !important;
@@ -17,9 +18,23 @@
     background-color: #FFE !important;
 }
 
+/* マケドニア */
+.optionally-scrollable {
+    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/e/eai04191/20150422/20150422034712.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.optionally-scrollable .getting-started p{
+    background: #FFE;
+    opacity: 0.9;
+    color: #822;
+}
+
 /* ヘッダー部分 */
 
 .drawer__header,
+.search-results__header,
 .column-header,
 .column-icon,
 .column-back-button,
@@ -49,19 +64,48 @@
     background-color: #F73 !important;
 }
 
-/* スクロール部分 */
-.scrollable:not(.optionally-scrollable) > *,
-.search-results__section > .account {
-    background-color: #EEDDCC !important;
+/* Drawer部分 */
+
+.search input,
+.search input:hover,
+.search__input,
+.search__input:focus,
+.drawer__inner .autosuggest-textarea {
+    background-color: #FFF !important;
+    border: 1px grey solid;
+    color: #822 !important;
 }
 
-.scrollable > * > .status,
-[style="cursor: default;"],
-.notification,
-.search-results__section > .account {
-    border-bottom: #FFE 10px solid !important;
+:placeholder-shown::-webkit-input-placeholder,
+.drawer__inner span {
+    color: #822;
 }
 
+.compose-form__modifiers {
+    height: 0;
+}
+
+.search-results__header span {
+    background-color: #F51 !important;
+    border-style: none !important;
+    color: #FFF !important;
+}
+
+.search-results__hashtag {
+    color: #822 !important;
+    font-weight: bold;
+}
+
+/* 送信ボタンの文字を書き換え */
+button.button{
+    font-size: 0px !important;
+}
+button.button::before{
+    content: "返信する";
+    font-size: medium;
+}
+
+/* 絵文字を変更 */
 .emoji-button img{
     visibility: hidden;
 }
@@ -70,6 +114,20 @@
     background-size: cover !important;
     background-position: center !important;
     transform: rotate(335deg);
+}
+
+/* カラム部分 */
+
+.scrollable:not(.optionally-scrollable) > *,
+.search-results__section > .account {
+    background-color: #EDC !important;
+}
+
+.scrollable > * > .status,
+[style="cursor: default;"],
+.notification,
+.search-results__section > .account {
+    border-bottom: #FFE 10px solid !important;
 }
 
 .status.muted,
@@ -98,23 +156,27 @@
 .navigation-bar strong {
     color: #F51 !important;
 }
+
 .status__content p,
-.muted .status__content p,
 .navigation-bar span,
 .missing-indicator {
     color: #822 !important;
 }
-.status .status__content a,
-.optionally-scrollable .getting-started a {
-    color: #55F;
+
+.status__content a,
+.getting-started a {
+    color: #55F !important;
 }
 
 .status__content__spoiler-link {
-    background-color: #FF7733 !important;
+    background-color: #F51 !important;
     color: #FFF !important;
 }
 
-
+.empty-column-indicator {
+    background-color: #FFE !important;
+    color: #822 !important;
+}
 
 /* スクロールバー */
 .scrollable::-webkit-scrollbar-track,
@@ -125,8 +187,9 @@
 .scrollable::-webkit-scrollbar-thumb{
     background-color: #EA8 !important;
 }
+
 .scrollable::-webkit-scrollbar-thumb:hover{
-    background-color: #FB9;
+    background-color: #FCA !important;
     opacity: 0.8;
 }
 
@@ -135,62 +198,9 @@
     font-size: 0px !important;
 }
 
-.navigation-bar, .column a.column-link{
-    background-color: #EEDDCC;
-    color: #882222;
-    border-bottom: #FFFFEE 5px solid !important;
-}
-
-/* 送信ボタンの文字を書き換え */
-button.button{
-    font-size: 0px !important;
-}
-button.button::before{
-    content: "返信する";
-    font-size: medium;
-}
-
-/* 検索ボックス */
-.search input,
-.search input:hover,
-.serch__input,
-.search__input:focus {
-    background-color: #FFFFFF !important;
-    border: 1px grey solid;
-    color: #822 !important;
-}
-.search-results__hashtag {
-    color: #822 !important;
-}
-.search-results__header {
-    background-color: #F73 !important;
-    color: #FFF !important;
-    border-style: none !important;
-}
-:placeholder-shown,
-::-webkit-input-placeholder {
-        color: #933;
-}
-.empty-column-indicator {
-    background-color: #FFE !important;
-    color: #822 !important;
-}
-
-.drawer__inner .autosuggest-textarea,
-.compose-form__modifiers {
-    border-color: grey !important;
-    border-style: solid solid hidden !important;
-    border-width: 1px;
-}
-
-/* マケドニア */
-.optionally-scrollable {
-    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/e/eai04191/20150422/20150422034712.png) !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-.optionally-scrollable .getting-started p{
-    background: #FFE;
-    opacity: 0.9;
+/*.column a.column-link,*/
+.navigation-bar {
+    background-color: #EDC;
     color: #822;
+    border-bottom: #FFE 5px solid !important;
 }
