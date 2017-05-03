@@ -172,7 +172,8 @@ button.button::before{
     color: #2b90d9;
 }
 
-.status__content__spoiler-link {
+.status__content__spoiler-link,
+.status__content__spoiler-link span {
     background-color: #F51 !important;
     color: #FFF !important;
 }
