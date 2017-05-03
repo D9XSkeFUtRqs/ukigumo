@@ -19,14 +19,16 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
     + `"chromium_sandbox": "true"`　→　`"false"`
     + `"name": ""`　→　`"（自分のアカウント名）"`
     + `"host": ""`　→　`"（自分のインスタンス名）"`
-    + `"default_page": "/web/timelines/home"`　→　`"/web/getting-started"`
 1. Mstdn.exeをもう一度起動すると、アプリが開く
 
 ### スタイルシートの適用
 
 1. [Releaseページ](https://github.com/D9XSkeFUtRqs/ukigumo/releases)からダウンロードし、展開
-1. config.jsonが存在する場所に、ダウンロードしたuser.cssを移動する<br>config.jsonがあるのは多分以下のあたり
+1. インストール時に書き換えたconfig.jsonが存在するフォルダを探す<br>config.jsonがあるのは多分以下のあたり
     + Windows：`%APPDATA%\Mstdn`
     + macOS：`~/Library/Application\ Support/Mstdn`
     + Linux：`~/.config/Mstdn`
+1. そのフォルダにダウンロードしたuser.cssを移動する
+1. config.jsonを以下のように書き換えて、保存する
+    + `"default_page": "/web/timelines/home"`　→　`"/web/getting-started"`
 1. Mstdn.exeを起動する
