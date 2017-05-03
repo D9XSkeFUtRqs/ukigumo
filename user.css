@@ -1,158 +1,153 @@
 /* 他のCSSの存在により詳細度が複雑 */
 /* 計算したくないので!importantがむちゃくちゃ多いです。 */
 
+/* 全体 */
 @media screen and (min-width: 1290px){
-  .column {
-    width: 25.58% !important;
-  }
-  .drawer {
-    width: 23.26% !important;
-  }
+    .column {
+        width: 25.58% !important;
+    }
+    .drawer {
+        width: 23.26% !important;
+    }
 }
 
 .ui,
 .drawer__inner,
 .column .scrollable:not(.optionally-scrollable) {
-  background-color: #FFFFEE !important;
+    background-color: #FFE !important;
 }
 
+/* ヘッダー部分 */
+
+.drawer__header,
+.column-header,
+.column-icon,
+.column-back-button,
+.account__action-bar,
+.account__action-bar__tab,
+.tabs-bar,
+.tabs-bar__link {
+    background-color: #F51 !important;
+    border-style: hidden !important;
+    color: #FFF !important;
+}
+
+.drawer__header i,
+.account__action-bar .dropdown__trigger i,
+.account__action-bar__tab span span,
+.account__action-bar__tab strong span,
+.account__action-bar__tab strong abbr {
+    color: #FFF !important;
+}
+
+.drawer__tab:hover,
+.column-icon:hover,
+.column-back-button:hover,
+.account__action-bar > *:first-child:hover,
+.account__action-bar__tab:hover,
+.tabs-bar__link:hover {
+    background-color: #F73 !important;
+}
+
+/* スクロール部分 */
 .scrollable:not(.optionally-scrollable) > *,
 .search-results__section > .account {
-  background-color: #EEDDCC !important;
+    background-color: #EEDDCC !important;
 }
+
 .scrollable > * > .status,
 [style="cursor: default;"],
 .notification,
 .search-results__section > .account {
-  border-bottom: #FFFFEE 10px solid !important;
+    border-bottom: #FFE 10px solid !important;
 }
 
 .emoji-button img{
-  visibility: hidden;
+    visibility: hidden;
 }
 .emoji-button{
-  background-image: url(/emoji/1f60f.svg);
-  background-size: cover !important;
-  background-position: center !important;
-  transform: rotate(335deg);
+    background-image: url(/emoji/1f60f.svg);
+    background-size: cover !important;
+    background-position: center !important;
+    transform: rotate(335deg);
 }
 
 .status.muted,
 [style="cursor: default;"] > .status,
 .detailed-status__action-bar {
-  border-style: none !important;
+    border-style: none !important;
 }
 
 .notification > .account{
-  border-style: none;
+    border-style: none;
 }
 
 .status__prepend span,
 .status__display-name strong,
 .notification__message span {
-  color: #792 !important;
+    color: #792 !important;
 }
 
 .status__prepend i{
-  color: #2b90d9;
+    color: #2b90d9;
 }
 .display-name strong {
-  color: #173 !important;
+    color: #173 !important;
 }
 .display-name span,
 .navigation-bar strong {
-  color: #F51 !important;
+    color: #F51 !important;
 }
 .status__content p,
 .muted .status__content p,
-.navigation-bar span {
-  color: #822 !important;
+.navigation-bar span,
+.missing-indicator {
+    color: #822 !important;
 }
 .status .status__content a,
 .optionally-scrollable .getting-started a {
-  color: #55F;
+    color: #55F;
 }
 
 .status__content__spoiler-link {
-  background-color: #FF7733 !important;
-  color: #FFF !important;
+    background-color: #FF7733 !important;
+    color: #FFF !important;
 }
 
-/* ヘッダー*/
-.column-header,
-.column-back-button,
-.column-icon,
-.drawer__header .drawer__tab,
-.tabs-bar__link{
-  background-color: #F51 !important;
-  color: #FFF !important;
-}
-.drawer__header a:hover,
-.column-icon:hover,
-.tabs-bar__link:hover{
-  background-color: #FF7733 !important;
-}
-.tabs-bar__link .active{
-  background-color: #EEAA88 !important;
-}
 
-.column-header i,
-.column-back-button i,
-.column-back-button span,
-.column-icon i,
-.drawer__header a i,
-.tabs-bar a i,
-.account__action-bar .dropdown__trigger.icon-button i,
-.drawer__header .drawer__tab a {
-  color: #FFFFFF !important;
-}
-.tabs-bar a{
-  border-style: none !important;
-}
-
-.account__action-bar{
-  background-color: #FF7733 !important;
-  border-style: none !important;
-}
-.account__action-bar__tab span span,
-.account__action-bar__tab strong span,
-.account__action-bar__tab strong abbr{
-  color: #FFFFFF !important;
-}
 
 /* スクロールバー */
-.scrollable::-webkit-scrollbar-track{
-  background: #FFFFEE;
+.scrollable::-webkit-scrollbar-track,
+.scrollable::-webkit-scrollbar-track:hover {
+    background: #FFFFEE;
 }
-.scrollable::-webkit-scrollbar-track:hover{
-  background: #FFFFEE;
-}
+
 .scrollable::-webkit-scrollbar-thumb{
-  background-color: #EEAA88 !important;
+    background-color: #EA8 !important;
 }
 .scrollable::-webkit-scrollbar-thumb:hover{
-  background-color: #FB9;
-  opacity: 0.8;
+    background-color: #FB9;
+    opacity: 0.8;
 }
 
 
 .compose-form__buttons button.button{
-  font-size: 0px !important;
+    font-size: 0px !important;
 }
 
 .navigation-bar, .column a.column-link{
-  background-color: #EEDDCC;
-  color: #882222;
-  border-bottom: #FFFFEE 5px solid !important;
+    background-color: #EEDDCC;
+    color: #882222;
+    border-bottom: #FFFFEE 5px solid !important;
 }
 
 /* 送信ボタンの文字を書き換え */
 button.button{
-  font-size: 0px !important;
+    font-size: 0px !important;
 }
 button.button::before{
-  content: "返信する";
-  font-size: medium;
+    content: "返信する";
+    font-size: medium;
 }
 
 /* 検索ボックス */
@@ -160,47 +155,42 @@ button.button::before{
 .search input:hover,
 .serch__input,
 .search__input:focus {
-  background-color: #FFFFFF !important;
-  border: 1px grey solid;
-  color: #822 !important;
+    background-color: #FFFFFF !important;
+    border: 1px grey solid;
+    color: #822 !important;
 }
 .search-results__hashtag {
-  color: #822 !important;
+    color: #822 !important;
 }
 .search-results__header {
-  background-color: #F73 !important;
-  color: #FFF !important;
-  border-style: none !important;
+    background-color: #F73 !important;
+    color: #FFF !important;
+    border-style: none !important;
 }
 :placeholder-shown,
 ::-webkit-input-placeholder {
-    color: #933;
+        color: #933;
 }
 .empty-column-indicator {
-  background-color: #FFE !important;
-  color: #822 !important;
+    background-color: #FFE !important;
+    color: #822 !important;
 }
 
-.drawer__inner .autosuggest-textarea {
-  border-color: grey !important;
-  border-style: solid solid hidden !important;
-  border-width: 1px;
-}
+.drawer__inner .autosuggest-textarea,
 .compose-form__modifiers {
-  border-color: grey !important;
-  border-style: hidden solid solid !important;
-  border-width: 1px;
+    border-color: grey !important;
+    border-style: solid solid hidden !important;
+    border-width: 1px;
 }
 
 /* マケドニア */
 .optionally-scrollable {
-  background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/e/eai04191/20150422/20150422034712.png) !important;
-  /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Macedonia.svg/1200px-Flag_of_Macedonia.svg.png) !important;*/
-  background-size: cover !important;
-  background-position: center !important;
+    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/e/eai04191/20150422/20150422034712.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 .optionally-scrollable .getting-started p{
-  background: #FFE;
-  opacity: 0.9;
-  color: #822;
+    background: #FFE;
+    opacity: 0.9;
+    color: #822;
 }
