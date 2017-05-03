@@ -44,7 +44,7 @@ config.jsonを書き加えることで、アプリ内の「Accounts」からア�
 "accounts": [
     {
         "name": "",
-        "host": "",
+        "host": "",
         "default_page": "/web/getting-started"
     },
     {
