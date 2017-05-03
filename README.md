@@ -32,3 +32,26 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
 1. config.jsonを以下のように書き換えて、保存する
     + `"chromium_sandbox": "true"`　→　`"false"`
 1. Mstdn.exeを起動する
+
+## マルチアカウントで利用するには…
+
+config.jsonを書き加えることで、アプリ内の「Accounts」からアカウントを切り替えることができます。
+
+以下のように書き加えてください（コンマの有無に注意）。
+
+```json:config.json
+…
+"accounts": [
+    {
+        "name": "",
+        "host": "",
+        "default_page": "/web/getting-started"
+    },
+    {
+        "name": "",
+        "host": "",
+        "default_page": "/web/getting-started"
+    }
+],
+…
+```
