@@ -10,7 +10,7 @@
 
 macOSとLinuxは分からない世界なので間違ってたらごめんなさい。
 
-### Mstdn.appのインストール
+### Mstdnのインストール
 
 1. [MstdnのReleaseページ](https://github.com/rhysd/Mstdn/releases)から各OS用のファイルをダウンロード、適当なところに展開<br>（Windowsだったら多分「Mstdn-win32-x64-x.x.x.zip」）
     + 私の環境（Windows10）では何故かv0.2.4が起動しない…<br>もし同様であればv0.2.3を試してみてください
