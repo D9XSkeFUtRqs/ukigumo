@@ -24,7 +24,6 @@
     background-size: cover !important;
     background-position: center !important;
 }
-
 .optionally-scrollable .getting-started p{
     background: #FFE;
     opacity: 0.9;
@@ -64,7 +63,14 @@
     background-color: #F73 !important;
 }
 
-/* Drawer部分 */
+/* drawer（投稿欄）部分 */
+
+/*.column a.column-link,*/
+.navigation-bar {
+    background-color: #EDC;
+    color: #822;
+    border-bottom: #FFE 5px solid !important;
+}
 
 .search input,
 .search input:hover,
@@ -132,12 +138,9 @@ button.button::before{
 
 .status.muted,
 [style="cursor: default;"] > .status,
-.detailed-status__action-bar {
+.detailed-status__action-bar,
+.notification > .account {
     border-style: none !important;
-}
-
-.notification > .account{
-    border-style: none;
 }
 
 .status__prepend span,
@@ -146,9 +149,12 @@ button.button::before{
     color: #792 !important;
 }
 
-.status__prepend i{
-    color: #2b90d9;
+.status__content p,
+.navigation-bar span,
+.missing-indicator {
+    color: #822 !important;
 }
+
 .display-name strong {
     color: #173 !important;
 }
@@ -157,15 +163,13 @@ button.button::before{
     color: #F51 !important;
 }
 
-.status__content p,
-.navigation-bar span,
-.missing-indicator {
-    color: #822 !important;
-}
-
 .status__content a,
 .getting-started a {
     color: #55F !important;
+}
+
+.status__prepend i{
+    color: #2b90d9;
 }
 
 .status__content__spoiler-link {
@@ -183,24 +187,9 @@ button.button::before{
 .scrollable::-webkit-scrollbar-track:hover {
     background: #FFFFEE;
 }
-
 .scrollable::-webkit-scrollbar-thumb{
     background-color: #EA8 !important;
 }
-
 .scrollable::-webkit-scrollbar-thumb:hover{
     background-color: #FCA !important;
-    opacity: 0.8;
-}
-
-
-.compose-form__buttons button.button{
-    font-size: 0px !important;
-}
-
-/*.column a.column-link,*/
-.navigation-bar {
-    background-color: #EDC;
-    color: #822;
-    border-bottom: #FFE 5px solid !important;
 }
