@@ -65,7 +65,7 @@
 
 /* drawer（投稿欄）部分 */
 
-/*.column a.column-link,*/
+.column a.column-link, /* getting-started */
 .navigation-bar {
     background-color: #EDC;
     color: #822;
