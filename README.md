@@ -2,7 +2,7 @@
 
 [Mastodon](https://github.com/tootsuite/mastodon)のデスクトップクライアント「[Mstdn](https://github.com/rhysd/Mstdn)」を某所風にするスタイルシート
 
-バグ、デザイン案、質問などは[Issueページ](https://github.com/D9XSkeFUtRqs/ukigumo/issues)または[こちら](https://ftb.moe/@D9XSkeFUtRqs)から気軽にどうぞ
+バグ、デザイン案、質問などは[Issueページ](https://github.com/D9XSkeFUtRqs/ukigumo/issues)またはインスタンスのアカウントから気軽にどうぞ
 
 ## 導入
 
