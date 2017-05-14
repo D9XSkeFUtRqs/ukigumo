@@ -1,0 +1,179 @@
+/*============================================================
+ukigumo
+: Style Sheet for Mstdn, a desktop client of Mastdon
+: written by 「」 （https://github.com/D9XSkeFUtRqs/ukigumo）
+============================================================*/
+
+
+/* 他のCSSの存在により詳細度が複雑 */
+/* 計算したくないので!importantがむちゃくちゃ多いです。 */
+
+/* 全体 */
+
+@media screen and (min-width: 1290px){
+    .column {
+        width: 25.58% !important;
+    }
+    .drawer {
+        width: 23.26% !important;
+    }
+}
+
+.ui,
+.drawer__inner,
+.scrollable:not(.optionally-scrollable),
+.optionally-scrollable {
+    background-color: #E5E8EA !important;
+}
+
+.optionally-scrollable .getting-started p{
+    background: #FFF;
+    /*opacity: 0.9;*/
+    color: black;
+}
+
+/* ヘッダー部分 */
+
+.drawer__header,
+.search-results__header,
+.column-header,
+.column-icon,
+.column-back-button,
+.account__action-bar,
+.account__action-bar__tab,
+.tabs-bar,
+.tabs-bar__link {
+    background-color: #3f729b !important;
+    border-style: hidden !important;
+    color: #FFF !important;
+}
+
+.drawer__header i,
+.account__action-bar .dropdown__trigger i,
+.account__action-bar__tab span span,
+.account__action-bar__tab strong span,
+.account__action-bar__tab strong abbr {
+    color: #FFF !important;
+}
+
+.drawer__tab:hover,
+.column-icon:hover,
+.column-back-button:hover,
+.account__action-bar > *:first-child:hover,
+.account__action-bar__tab:hover,
+.tabs-bar__link:hover {
+    background-color: #4f82Ab !important;
+}
+
+/* drawer（投稿欄）部分 */
+
+.column a.column-link, /* getting-started */
+.navigation-bar {
+    background-color: #FFF;
+    color: black;
+    border-bottom: #E5E8EA 3px solid !important;
+}
+
+.search input,
+.search input:hover,
+.search__input,
+.search__input:focus,
+.drawer__inner .autosuggest-textarea {
+    background-color: #FFF !important;
+    border: 1px #E5E8EA solid;
+    color: black !important;
+}
+
+:placeholder-shown::-webkit-input-placeholder,
+.drawer__inner span {
+    color: black;
+}
+
+.compose-form__modifiers {
+    height: 0;
+}
+
+.button,
+.search-results__header span {
+    background-color: #3f729b !important;
+    border-style: none !important;
+    color: #FFF !important;
+}
+
+.search-results__hashtag {
+    color: black !important;
+    font-weight: bold;
+}
+
+/* カラム部分 */
+
+.scrollable:not(.optionally-scrollable) > * {
+    background-color: #FFF !important;
+}
+
+.scrollable > * > .status,
+[style="cursor: default;"],
+.notification,
+.account {
+    background-color: white !important;
+    border-bottom: #E5E8EA 3px solid !important;
+}
+
+.status.muted,
+[style="cursor: default;"] > .status,
+.detailed-status__action-bar,
+.notification > .account {
+    border-style: none !important;
+}
+
+.status__prepend span,
+.status__display-name strong,
+.notification__message span {
+    color: #792 !important;
+}
+
+.status__content p,
+.navigation-bar span,
+.missing-indicator {
+    color: black !important;
+}
+
+.display-name strong {
+    color: #34526f !important;
+}
+.display-name span,
+.navigation-bar strong {
+    color: #3f729b !important;
+}
+
+.status__content a,
+.getting-started a {
+    color: #55F !important;
+}
+
+.status__prepend i{
+    color: #2b90d9;
+}
+
+.status__content__spoiler-link,
+.status__content__spoiler-link span {
+    background-color: #3f729b !important;
+    color: #FFF !important;
+}
+
+.empty-column-indicator {
+    background-color: #3f729b !important;
+    color: black !important;
+}
+
+/* スクロールバー */
+.scrollable::-webkit-scrollbar-track,
+.scrollable::-webkit-scrollbar-track:hover {
+    background: #E5E8EA;
+}
+.scrollable::-webkit-scrollbar-thumb{
+    background-color: #3f729b !important;
+}
+.scrollable::-webkit-scrollbar-thumb:hover{
+    background-color: #4f82Ab !important;
+}
