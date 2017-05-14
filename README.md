@@ -13,7 +13,7 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
 ### Mstdnのインストール
 
 1. [MstdnのReleaseページ](https://github.com/rhysd/Mstdn/releases)から各OS用のファイルをダウンロード、適当なところに展開<br>（Windowsだったら多分「Mstdn-win32-x64-x.x.x.zip」）
-    + 私の環境（Windows10）では何故かv0.2.4が起動しない…<br>もし同様であればv0.2.3を試してみてください
+    + ~~私の環境（Windows10）では何故かv0.2.4が起動しない…<br>もし同様であればv0.2.3を試してみてください~~<br>v0.2.5の起動を確認しました
 1. Mstdn.exeを起動すると「Please write configulation in JSON」と出て、config.jsonが開く
 1. config.jsonを以下のように書き換えて、保存する
     + `"name": ""`　→　`"（自分のアカウント名）"`
@@ -28,14 +28,14 @@ macOSとLinuxは分からない世界なので間違ってたらごめんなさ�
     + Windows：`%APPDATA%\Mstdn`
     + macOS：`~/Library/Application\ Support/Mstdn`
     + Linux：`~/.config/Mstdn`
-1. config.jsonが存在するフォルダに、Releaseページでダウンロードしたuser.cssを移動する
+1. config.jsonが存在するフォルダに、Releaseページでダウンロードしたファイルに入っているuser.cssを移動する
 1. config.jsonを以下のように書き換えて、保存する
     + `"chromium_sandbox": "true"`　→　`"false"`
 1. Mstdn.exeを起動する
 
 ## マルチアカウントで利用するには…
 
-config.jsonを書き加えることで、アプリ内の「Accounts」からアカウントを切り替えることができます。
+config.jsonに書き加えることで、アプリ内の「Accounts」からアカウントを切り替えることができます。
 
 以下のように書き加えてください（コンマの有無に注意）。
 
